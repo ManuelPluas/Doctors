@@ -6,7 +6,7 @@ namespace Doctors.Infraestructure
 {
     using ViewsModels;
     
-    class InstanceLocator
+    public class InstanceLocator
     {
         #region properties
         public MainViewModel Main

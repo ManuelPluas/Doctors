@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Doctors.ViewsModels
+    
 {
+ 
     public class MainViewModel
     {
 
         #region ViewModels
         public LoginViewModel Login
-        { get;
+        {
+            get;
             set;
         }
         #endregion

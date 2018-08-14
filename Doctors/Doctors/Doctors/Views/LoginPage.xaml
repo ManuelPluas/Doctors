@@ -7,7 +7,7 @@
     <ContentPage.Content>
 
         <ScrollView
-            BindingContext="{Binding Path=Login}">
+            BindingContext="{Binding Login}">
             <!--aqui colocamos el bidding que va a ligar a-->
             
             <StackLayout
@@ -33,6 +33,7 @@
             <Button
                 
                 BackgroundColor="Accent"
+                Command="{Binding BuscarCommand}"
                 TextColor="White"     
                 Text="Ir a busqueda">
             </Button>
