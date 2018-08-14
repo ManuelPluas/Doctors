@@ -20,6 +20,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewsModels\BaseViewModels.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewsModels\LoginViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewsModels\MainViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\LoginPage.xaml.cs">

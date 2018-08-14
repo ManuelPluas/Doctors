@@ -30,8 +30,7 @@
                 HorizontalOptions="CenterAndExpand" />
             <StackLayout
                 Margin="30,0">
-            <Button
-                
+            <Button 
                 BackgroundColor="Accent"
                 Command="{Binding BuscarCommand}"
                 TextColor="White"     
@@ -40,6 +39,7 @@
             <Button
                 BorderRadius="23"
                 BackgroundColor="Accent"                                              
+                IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
                 TextColor="White"
                 Text="contact us">
 
