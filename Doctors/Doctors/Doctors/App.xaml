@@ -5,11 +5,10 @@
              x:Class="Doctors.App">
 	<Application.Resources>
 
+        <!--Aplication resource dictionary-->
         <ResourceDictionary>
             <infra:InstanceLocator x:Key="Locator">
-                
             </infra:InstanceLocator>
-            
         </ResourceDictionary>
 	</Application.Resources>
 </Application>

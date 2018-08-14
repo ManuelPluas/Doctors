@@ -6,8 +6,12 @@
              Title="Bienvenido">
     <ContentPage.Content>
 
-        <ScrollView>
+        <ScrollView
+            BindingContext="{Binding Path=Login}">
+            <!--aqui colocamos el bidding que va a ligar a-->
+            
             <StackLayout
+                
             Padding="10,20,10,5">
             <Label                
                 FontAttributes="Bold"
