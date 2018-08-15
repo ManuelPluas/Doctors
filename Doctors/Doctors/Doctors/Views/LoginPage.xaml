@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Doctors.Views.LoginPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             Title="Bienvenido">
+    <ContentPage.Content>
+
+        <ScrollView>
+            <StackLayout
+            Padding="10,20,10,5">
+            <Label                
+                FontAttributes="Bold"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                Text="Doctors">
+            </Label>
+            <Image                    
+                Source="Logo.png">
+            </Image> 
+            <Label
+                Margin="40,0"
+                HorizontalTextAlignment="Center"
+                FontSize="Medium"
+                Text="La red más amplia de médicos del Ecuador"          
+                HorizontalOptions="CenterAndExpand" />
+            <StackLayout
+                Margin="30,0">
+            <Button
+                
+                BackgroundColor="Accent"
+                TextColor="White"     
+                Text="Ir a busqueda">
+            </Button>
+            <Button
+                BorderRadius="23"
+                BackgroundColor="Accent"                                              
+                TextColor="White"
+                Text="contact us">
+
+            </Button>
+            </StackLayout>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
