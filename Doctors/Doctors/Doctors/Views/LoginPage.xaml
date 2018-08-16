@@ -3,12 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Doctors.Views.LoginPage"
              BindingContext="{Binding Main, Source={StaticResource Locator}}"
-             Title="Bienvenido">
+             Title="Login">
     <ContentPage.Content>
 
         <ScrollView
             BindingContext="{Binding Login}">
-            <!--aqui colocamos el bidding que va a ligar a-->
+            <!--aqui colocamos el bidding que va a ligar al objeto Login que creamos-->
             
             <StackLayout
                 
@@ -39,7 +39,6 @@
             <Button
                 BorderRadius="23"
                 BackgroundColor="Accent"                                              
-                IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
                 TextColor="White"
                 Text="contact us">
 

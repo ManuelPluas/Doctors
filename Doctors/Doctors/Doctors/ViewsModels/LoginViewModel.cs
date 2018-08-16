@@ -7,6 +7,8 @@ namespace Doctors.ViewsModels
 {
     using GalaSoft.MvvmLight.Command;
     using System.Windows.Input;
+    using Views;
+
     public class LoginViewModel : BaseViewModel //Esta heredando de basevM
     {
 
@@ -19,7 +21,7 @@ namespace Doctors.ViewsModels
         //capturadas ejemplo
         // public String Email{get;set}
 
-        public bool IsEnabled { get; set; }
+        
         #endregion
 
         #region construstores
@@ -28,19 +30,24 @@ namespace Doctors.ViewsModels
 
 
         #endregion
+
         #region Comands //botones //debemos importar le s.w.Input
-        public ICommand BuscarCommand
+        public ICommand BuscarCommand //es de solo lectura
         {
             get
             {
-                return new RelayCommand(Login);
+                return new RelayCommand(Buscar);
 
             }
         }
 
-
-        private void Login()
+        //pushAsyn siginifa que estamos aplinado otra pagina
+        //llamar a la otra pagina
+        private async void Buscar()
         {
+            //GetInstance llamamos al singleton
+            MainViewModel.GetInstance().Busqueda = new BusquedaViewModel();// antes de lanzar la page iniciarmos la ViewModel
+            await App.Current.MainPage.Navigation.PushAsync(new BusquedaPage());
 
         }
         #endregion
