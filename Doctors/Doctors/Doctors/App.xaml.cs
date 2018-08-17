@@ -5,6 +5,7 @@ using Xamarin.Forms.Xaml;
 [assembly: XamlCompilation (XamlCompilationOptions.Compile)]
 namespace Doctors
 {
+    using Doctors.ViewsModels;
     using Views;
    
     
@@ -14,13 +15,14 @@ namespace Doctors
         public App ()
 		{
 			InitializeComponent();
-
+            MainViewModel.GetInstance().Login = new LoginViewModel();
 			this.MainPage = new NavigationPage (new LoginPage());
 		}
         #endregion
-
-        #region metodos
-        protected override void OnStart ()
+        
+    
+    #region metodos
+    protected override void OnStart ()
 		{
 			// Handle when your app starts
 		}

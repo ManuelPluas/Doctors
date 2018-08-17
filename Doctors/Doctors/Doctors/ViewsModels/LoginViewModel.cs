@@ -13,7 +13,7 @@ namespace Doctors.ViewsModels
     {
 
         #region atributos
-        private bool isEnabled;
+        //private bool isEnabled;
         #endregion
 
         #region propiedades
@@ -48,7 +48,6 @@ namespace Doctors.ViewsModels
             //GetInstance llamamos al singleton
             MainViewModel.GetInstance().Busqueda = new BusquedaViewModel();// antes de lanzar la page iniciarmos la ViewModel
             await App.Current.MainPage.Navigation.PushAsync(new BusquedaPage());
-
         }
         #endregion
 
